@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex02</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(array,n) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == n) {
+                for (let j = i; j < array.length; j++) {
+                    array[j] = array [j + 1];
+                }
+                array.pop();
+            }
+        }
+        return array;
+    }
+    let a = [12,6,3,7,21,5,7];
+    tryRemoveFromArray(a,7);
+    document.write(a);
+</script>
+</body>
+</html>

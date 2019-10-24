@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex03</title>
+</head>
+<body>
+<script>
+    function printFibonacci(a) {
+        if (a <= 1) {
+            document.write("Error!");
+        } else {
+            fibonacci = [1, 1];
+            var i = 1
+            while ((fibonacci[i] + fibonacci[i - 1]) < a) {
+                fibonacci.push((fibonacci[i] + fibonacci[i - 1]))
+                i++;
+            }
+            document.write(fibonacci);
+        }
+    }
+    printFibonacci(332);
+</script>
+</body>
+</html>
